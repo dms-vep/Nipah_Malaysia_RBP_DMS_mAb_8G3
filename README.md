@@ -1,8 +1,10 @@
 # Nipah Malaysia RBP mAb 8G3
 DMS mapping of escape mutations for mAb 8G3.
 
-Link to interactive heatmap of escape mutations: [https://dms-vep.org/Nipah_Malaysia_RBP_DMS_mAb_8G3/htmls/8G3_mut_effect.html](https://dms-vep.org/Nipah_Malaysia_RBP_DMS_mAb_8G3/htmls/8G3_mut_effect.html)
 
+[Link to data that have been filtered and processed](./results/filtered_data/8G3_mut_effect_filtered.csv). This should be used for additional analyses.
+
+Link to interactive heatmap of escape mutations: [https://dms-vep.org/Nipah_Malaysia_RBP_DMS_mAb_8G3/htmls/8G3_mut_effect.html](https://dms-vep.org/Nipah_Malaysia_RBP_DMS_mAb_8G3/htmls/8G3_mut_effect.html)
 
 For additional information about the pipeline, including links to raw data, see [https://dms-vep.github.io/Nipah_Malaysia_RBP_DMS_mAb_8G3/](https://dms-vep.github.io/Nipah_Malaysia_RBP_DMS_mAb_8G3/).
 
