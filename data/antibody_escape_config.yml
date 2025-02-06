@@ -88,7 +88,7 @@ escape_plot_kwargs_default: &escape_plot_kwargs_default
   heatmap_max_at_least: 2
   heatmap_min_at_least: -2
   init_floor_at_zero: false
-  init_site_statistic: sum
+  init_site_statistic: mean
   site_zoom_bar_color_col: region  # supplied in `site_numbering_map`
   heatmap_color_scheme: redblue
 
@@ -101,14 +101,12 @@ plot_hide_stats_default: &plot_hide_stats_default
   functional effect:
     csv: results/func_effects/averages/CHO_bEFNB3_func_effects.csv
     csv_col: effect
-    init: -2.5
+    init: -2
     min_filters:
       times_seen: 2
 
 # define the antibody selections
 antibody_selections:
-  # ---------------------------------------------------------------------------------
-  # 8G3
   LibA-240514-8G3: 
     neut_standard_name: neut_standard
     prob_escape_filters: *prob_escape_filters_default
@@ -169,14 +167,14 @@ avg_escape_plot_kwargs_default: &avg_escape_plot_kwargs_default
   alphabet: ['R','K','H','D','E','Q','N','S','T','Y','W','F','A','I','L','M','V','G','P','C']
   addtl_slider_stats:
     times_seen: 2
-    escape_std: 2
+    escape_std: 3
   addtl_tooltip_stats:
     - sequential_site
   heatmap_max_at_least: 2
-  heatmap_min_at_least: -3
+  heatmap_min_at_least: -2
   init_floor_at_zero: false
   addtl_slider_stats_as_max: [escape_std]
-  init_site_statistic: sum
+  init_site_statistic: mean
   site_zoom_bar_color_col: region  # supplied in `site_numbering_map`
   heatmap_color_scheme: redblue
 
@@ -188,7 +186,7 @@ avg_antibody_escape_default: &avg_antibody_escape_default
     avg_type: mean
     addtl_slider_stats:
       times_seen: 2
-      escape_std: 2
+      escape_std: 3
     addtl_slider_stats_as_max: [escape_std]
     per_model_tooltip: true
   plot_hide_stats: *plot_hide_stats_default
